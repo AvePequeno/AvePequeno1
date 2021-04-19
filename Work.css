@@ -141,7 +141,7 @@ section
 }
 .prjct-ex__link:hover:after 
 {
-    content: url(https://assets.codepen.io/6032352/Chowder+Work.GIF?width=350&height=350&format=auto);
+    content: url(https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/AvePequenashop.png);
     background-repeat: no-repeat;
     background-position: center;
     height: auto;
@@ -154,7 +154,7 @@ section
 }
 .prjct-ex__linkp:hover:after 
 {
-    content: url('https://assets.codepen.io/6032352/AvePequenashop.png?width=500&height=500&format=auto');
+    content: url(https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/Chowder%20Work.GIF);
     background-repeat: no-repeat;
     background-position: center bottom;
     height: auto;
