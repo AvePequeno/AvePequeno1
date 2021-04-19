@@ -141,11 +141,12 @@ section
 }
 .prjct-ex__link:hover::after 
 {
-    background-image: url("https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/AvePequenashop.png");
+    content: url("https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/AvePequenashop.png");
     background-position: center;
+    position: relative;
     height: auto;
     width: auto;
-    display: inline-block;
+    display: block;
 }
 .prjct-ex__linkp:hover
 {
