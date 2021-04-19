@@ -1,3 +1,3 @@
 # AvePequeno1
 
-https://avepequeno.github.io/AvePequeno1/index.html
+https://avepequeno.github.io/AvePequeno1/Index.html
