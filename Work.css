@@ -141,7 +141,7 @@ section
 }
 .prjct-ex__link:hover::after 
 {
-    content: url("https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/AvePequenashop.png");
+    background: url("https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/AvePequenashop.png");
     background-repeat: no-repeat;
     background-position: center;
     height: auto;
@@ -154,7 +154,7 @@ section
 }
 .prjct-ex__linkp:hover::after 
 {
-    content: url('https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/Chowder%20Work.GIF');
+    background: url('https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/Chowder%20Work.GIF');
     background-repeat: no-repeat;
     background-position: center bottom;
     height: auto;
