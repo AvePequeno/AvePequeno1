@@ -257,7 +257,7 @@ section
   font-weight: var(--fw-bold);
   font-size: var(--fs-h2);
   text-decoration: none;
-  z-index: 100;
+  z-index: 10;
 }
 
 .nav__link:hover
@@ -280,6 +280,7 @@ section
 .nav-open .nav
 {
   transform: translateX(0%);
+  z-index: 100;
 }
 
 .nav-open .nav-toggle
