@@ -239,8 +239,6 @@ section
 .nav
 {
   position: fixed;
-  background: var(--clr-black);
-  color: var(--clr-white);
   top: 0;
   bottom: 0;
   left: 0;
@@ -328,7 +326,7 @@ section
   width: 2em;
   height: 3px;
   border-radius: 1em;
-  transition: transform 250ms ease-in-out;
+  transition: transform 350ms ease-in-out;
 }
 
 .hamburger::before,
