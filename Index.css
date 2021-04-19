@@ -267,6 +267,7 @@ section
   font-weight: var(--fw-bold);
   font-size: var(--fs-h2);
   text-decoration: none;
+  z-index: 1000;
   
 }
 
@@ -284,7 +285,7 @@ section
   position: absolute;
   right: 1em;
   top: 1em;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .nav-open .nav
