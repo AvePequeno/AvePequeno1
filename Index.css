@@ -116,7 +116,7 @@ section
     background-color: var(--clr-orange);
     color: var(--clr-white);
     font-family: var(--ff-only);
-    width: 50%;
+    width: 40%;
     height: 10%;
     position: relative;
     left: 300px;
@@ -135,7 +135,7 @@ section
     font-family: var(--ff-only_);
     text-align: justify;
     line-height: 1.25;
-    width: 500px;
+    width: 450px;
     height: 100%;
   }
   
