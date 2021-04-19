@@ -291,6 +291,7 @@ section
 .nav-open .nav
 {
   transform: translateX(0%);
+  z-index: 1000;
 }
 
 .nav-open .nav-toggle
