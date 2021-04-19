@@ -154,11 +154,12 @@ section
 }
 .prjct-ex__linkp:hover::after 
 {
-    background-clip: url("https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/Chowder%20Work.GIF");
-    background-position: center bottom;
+    content: url("https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/Chowder%20Work.GIF");
+    background-position: center;
+    position: relative;
     height: auto;
     width: auto;
-    display: inline-block;
+    display: block;
 }
 /* Language Section*/
 
