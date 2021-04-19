@@ -144,8 +144,8 @@ section
     grid-area: img;
     grid-column: 1;
     grid-row: 1;
-    width: 700px;
-    height: 750px;
+    width: 775px;
+    height: 825px;
     position: relative;
     z-index: 1;
     border: .25em groove var(--clr-orange);
