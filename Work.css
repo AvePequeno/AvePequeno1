@@ -1,98 +1,387 @@
-<!DOCTYPE html>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
 
-<html lang="en" >
+/*Properties*/
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Martinez</title>
-    <link rel="stylesheet" href="Work.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <!-- font-family: 'AmericanTypwrterITCW01-Lt'; -->
-    <link href="//db.onlinewebfonts.com/c/f7155a90eafcde757701e3f9adcd8113?family=AmericanTypwrterITCW01-Lt"
-        rel="stylesheet" type="text/css" />
-    <!-- font-family: 'Rubik', sans-serif;-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+:root
+{
+  --ff-only: 'AmericanTypwrterITCW01-Lt';
+  --ff-only_: 'Rubik', sans-serif;
+  
+  --fw-reg: 300;
+  --fw-bold: 900;
+  
+  --clr-red: #AE3136;
+  --clr-orange: #EC5915;
+  --clr-green: #ABA929;
+  --clr-blue: #2397CC;
+  --clr-black: #131417;
+  --clr-white: #FFFFFF;
+  
+  --fs-h1: 3rem;
+  --fs-h2: 2.75rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  
+  --wd-norm: 100px;
+  --ht-norm: 100px;
+}
 
-</head>
+@media (min-width: 800px)
+{
+  :root
+  {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.25rem;
+  }
+}
+/* Typography*/
 
-<body>
-    <header class="header">
-        <div class="logo">
-            <div class="initials">OM</div>
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="Index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a class="nav__link">Work</a></li>
-            </ul>
-        </nav>
-    </header>
+h1,
+h2,
+h3
+{
+  line-height: 1.1;
+  margin: 0;
+}
 
-    <section class="my-work" id="work">
-        <div class="personal-prjct">
-            <ul class="prjct-ex">
-                <li class="prjct-ex__folder">
-                    <a class="prjct-ex__link"
-                        href="https://drive.google.com/drive/folders/1EHPkq4b91zMMKsgRD6uC895ZKZYDBVI9?usp=sharing">
-                        <i class="fas fa-file-signature" style="color: var(--clr-white); "></i> Works
-                    </a>
-                </li>
-                <li class="prjct-ex__folder">
-                    <a class="prjct-ex__linkp" href="https://www.avepequenashop.com">
-                        <i class="bi-layout-wtf" style="color: var(--clr-white);"></i> Personal Project
-                    </a>
-                </li>
-            </ul>
+h1{ font-size: var(--fs-h1); }
+h2{ font-size: var(--fs-h2); }
+h3{ font-size: var(--fs-h3); }
 
-            <h2 class="lang_header">Languages:</h2>
-            <ul class="lang-list">
-                <li class="lang-list__item">
-                    <i class="fab fa-html5" style="color: var(--clr-blue);"></i>
-                <li class="lang-list__item">
-                    <i class="fab fa-css3-alt" style="color: var(--clr-blue);"></i>
-                <li class="lang-list__item">
-                    <i class="fab fa-js" style="color: var(--clr-blue);"></i>
-    </section>
+/*General Styles*/
 
-    <footer class="footer">
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/omar-martinez-2a0v1e1p2e0q1u8eno">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/avepequeno">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://codepen.io/avepequeno">
-                    <i class="fab fa-codepen"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://twitter.com/avepequeno">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="mailto:youngmarmar18@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </li>
-        </ul>
+html
+{
+  scroll-behavior: smooth;
+}
 
-    </footer>
-            <script src="https://kit.fontawesome.com/95f5162161.js" crossorigin="anonymous"></script>
-            <script type="text/javascript" src="json.json"></script>
-            <script type="text/javascript" src="Portfolio.js"></script>
+.header
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
 
-</body>
+.initials
+{
+  font-family: var(--ff-only_);
+  font-size: 2em;
+  font-weight: var(--fw-bold);
+  text-decoration: underline .1em;
+  color: var(--clr-white);
+}
+
+body 
+{
+  background: var(--clr-black);
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+section
+{
+  padding: 5em 7em;
+}
+
+/*My works section*/
+
+.personal--prjct
+{
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.prjct-ex
+{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  list-style: none;
+  top: 100px;
+
+}
+
+.prjct-ex__folder
+{
+  font-family: var(--ff-only_);
+  border: 1em outset var(--clr-orange);
+  align-items: center;
+  margin: 0;
+  padding: 3em;
+}
+
+.prjct-ex__link
+{
+  color: var(--clr-white);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+}
+
+.prjct-ex__linkp
+{
+  color: var(--clr-white);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+}
+
+.prjct-ex__link:hover
+{
+  color: var(--clr-blue);
+}
+.prjct-ex__link:hover::after 
+{
+    background: url("https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/AvePequenashop.png");
+    background-position: center;
+    height: auto;
+    width: auto;
+    display: display-inside;
+}
+.prjct-ex__linkp:hover
+{
+  color: var(--clr-blue);
+}
+.prjct-ex__linkp:hover::after 
+{
+    background: url("https://github.com/AvePequeno/AvePequeno1/blob/58a16866f0356820e6a603783e5e195fc0d266d6/imgs/Chowder%20Work.GIF");
+    background-position: center bottom;
+    height: auto;
+    width: auto;
+    display: display-inside;
+}
+/* Language Section*/
+
+.lang_header
+{
+  font-family: var(--ff-only_);
+  font-weight: var(--fw-reg);
+  color: var(--clr-white);
+  position: relative;
+  top: 200px;
+  text-align: center;
+  border: .15em outset var(--clr-orange);
+}
+
+.lang-list
+{
+  display: flex;
+  flex-direction: row;
+  color: var(--clr-white);
+  position: relative;
+  top: 225px;
+  justify-content: space-evenly;
+  
+  
+}
+
+.lang-list__item
+{
+  list-style: none;
+  font-size: 2.25em;
+}
+
+.footer
+{
+  text-align: centered;
+  padding: 5.5em 0;
+  margin: 0 auto;
+  font-size: var(--fs-h2);
+}
+
+.social-list
+{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 1.75em 0;
+  padding: 0;
+}
+
+.social-list__item
+{
+  margin: 0;
+}
+
+.social-list__link
+{
+  color: var(--clr-orange);
+  padding: .75em;/*gives extra clickable space*/
+}
+.social-list__link:hover
+{
+  color: var(--clr-blue);
+}
+
+/*Navigation menu*/
+.nav
+{
+  position: fixed;
+  background: var(--clr-black);
+  color: var(--clr-white);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav__list
+{
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link
+{
+  color: inherit;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2);
+  text-decoration: none;
+  z-index: 10;
+}
+
+.nav__link:hover
+{
+  color: var(--clr-blue);
+}
+
+.nav-toggle
+{
+  padding: .50em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1;
+}
+
+.nav-open .nav
+{
+  transform: translateX(0%);
+  z-index: 100;
+}
+
+.nav-open .nav-toggle
+{
+  position: fixed;
+}
+
+.nav-open .hamburger
+{
+  transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before
+{
+  transform: rotate(90deg) translateX(-2px);
+}
+
+.nav-open .hamburger::after
+{
+  opacity: 0;
+}
+
+.hamburger
+{
+  display: block;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after
+{
+  background: var(--clr-orange);
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
+@media screen and (max-width: 950px) and (min-width: 500px), (min-width: 800px)
+{
+  .header
+  {
+    padding: 1em;
+    margin-bottom: 10px;
+  }
+
+  .initials
+  {
+    font-size: 1em;
+  }
+
+  body
+  {
+    margin: auto;
+    padding: auto;
+  }
+  
+  section
+  {
+    padding: auto;
+    margin: auto;
+  }
+  
+  .personal--prjct
+  {
+    margin: auto;
+    padding: auto;
+  }
+  
+  .prjct-ex
+  {
+    margin: auto;
+    padding: auto;
+  }
+
+  .lang_header
+  {
+    margin: auto;
+    padding: auto;
+  }
+
+  .lang-list
+  {
+    margin: auto;
+    padding: auto;
+  }
+  
+  .footer
+  {
+    padding: auto;
+    margin: auto;
+  }
+}
