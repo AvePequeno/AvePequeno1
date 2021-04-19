@@ -295,7 +295,7 @@ section
 
 .nav-open .hamburger::before
 {
-  transform: rotate(90deg) translateX(-6px);
+  transform: rotate(90deg) translateX(-2px);
 }
 
 .nav-open .hamburger::after
